@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- styles -->
+    <link rel = "stylesheet" type = "text/css" href = "bakeshop.css">
+    <!-- fonts -->
+    <link href = "https://fonts.googleapis.com/css?family=Libre+Baskerville" rel = "stylesheet">
+    <!-- JQuery file -->
+    <script src="jquery-3.2.1.min.js"></script>
+    <!-- JS file -->
+    <script type = "text/javascript" src = "bakeshop.js"></script>
+    </head>
+    <body>
+        <div class = "topnav"><!--components of the top black navigation bar-->
+            <div id = "logo">
+                <a href = "home.html"><img src = "bunbunlogo@3x.png"></a>
+            </div>
+            <div id = "title">
+                <a href = "shop.html">Shop</a>
+            </div>
+        </div>
+
+        <div class = pumpkinspice><!--Product description-->
+            <h1>
+            Pumpkin Spice
+            </h1>
+            <p>
+            A delectable treat perfect for fall.
+            </p>
+
+            <br>
+            <b> Quantity </b>
+
+            <div id = "addtocart"><!--ADD TO CART button-->
+                <button><a href = "shoppingcart.html">ADD TO CART</a></button>
+            </div>
+
+            <div id = "add"><!--ADD QTY (+) button-->
+                <button type = "button">+</button>
+            </div>
+
+            <div id = "num"><!--box that displays qty-->
+                <input type = "number" min = "1" max = "10"><!--allows user to type in a qty-->
+            </div>
+
+            <div id = "subtract"><!--SUBTRACT QTY (-) button-->
+                <button>-</button>
+            </div>
+        </div>
+
+        <div id = pumpkinimg><!--product image-->
+            <img src = "pumpkinspice.png" id = "productimg" style = width:400px;height:400px;>
+        </div>
+
+        <div class="dropdown"> <!--dropdown menu for selecting a pack-->
+            <button onclick = "packList()" class = "dropbtn" id = "selectpack">Select Pack</button>
+            <div id = "pack" class ="dropdown-content">
+                <a id="individual">Individual</a>
+                <a id="6pack">6-pack</a>
+                <a id="12pack">12-pack</a>
+        </div>
+
+        <button onclick="flavorList2()" class="dropbtn" id = "flavor2">Add 2nd Additional Flavor</button>
+            <div id="flavors2" class="dropdown-content"> <!--dropdown menu for selecting the 2nd flavor-->
+                <a id = "og2">Original</a>
+                <a id = "glutenfree2">Original Gluten Free</a>
+                <a id ="vegan2">Original Vegan</a>
+                <a id ="carrotcake2">Carrot Cake</a>
+                <a id ="buttermilk2">Old Fashioned Buttermilk</a>
+                <a id ="caramel2">Caramel Pecan</a>
+                <a id ="blackberry2">Blackberry</a>
+                <a id ="lemon2">Lemon Lavender</a>
+                <a id ="cranberry2">Cranberry</a>
+                <a id ="strawberry2">Strawberry Rhubarb</a>
+                <a id ="birthday2">Birthday Cake</a>
+                <a id ="walnut2">Walnut</a>
+                <a id ="maple2">Maple Apple Pecan</a>
+                <a id ="bacon2">Bacon</a>
+            </div>
+
+            <button onclick = "flavorList1()" class = "dropbtn" id = "flavor1">Add 1 Additional Flavor</button>
+            <div id = "flavors1" class = "dropdown-content"> <!--dropdown menu for selecting the 1st flavor-->
+                <a id = "og">Original</a>
+                <a id = "glutenfree">Original Gluten Free</a>
+                <a id ="vegan">Original Vegan</a>
+                <a id ="carrotcake">Carrot Cake</a>
+                <a id ="buttermilk">Old Fashioned Buttermilk</a>
+                <a id ="caramel">Caramel Pecan</a>
+                <a id ="blackberry">Blackberry</a>
+                <a id ="lemon">Lemon Lavender</a>
+                <a id ="cranberry">Cranberry</a>
+                <a id ="strawberry">Strawberry Rhubarb</a>
+                <a id ="birthday">Birthday Cake</a>
+                <a id ="walnut">Walnut</a>
+                <a id ="maple">Maple Apple Pecan</a>
+                <a id ="bacon">Bacon</a>
+            </div>
+        </div>
+    </body>
+</html>
